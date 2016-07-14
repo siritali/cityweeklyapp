@@ -16,6 +16,8 @@ var Header = React.createClass({
 						<li><Link to="/todos-page">Events</Link></li>
 						<li><Link to="/manage-todo">Create Event</Link></li>
 						<li><Link to="/calendar-page">Calendar</Link></li>
+						<li><Link to="/signUp-page">Sign Up</Link></li>
+						<li><Link to="/logIn-page">Log In</Link></li>
 					</ul>
 				</div>
 			</div>

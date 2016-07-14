@@ -9,6 +9,8 @@ var App = require('./components/App');
 var TodoPage = require('./components/todos/TodoPage');
 var ManageTodoPage = require('./components/todos/ManageTodoPage');
 var CalendarPage = require('./components/calendar/Calendar');
+var SignUpPage = require('./components/signUp/SignUp');
+var LogInPage = require('./components/logIn/LogIn');
 
 var routes = (
 	<Route path="/" component={App}>
@@ -18,6 +20,9 @@ var routes = (
 		<Route path="/manage-todo" component={ManageTodoPage} />
 		<Route path="/manage-todo/:id" component={ManageTodoPage} />
 		<Route path="/calendar-page" component={CalendarPage} />
+		<Route path="/signUp-page" component={SignUpPage} />
+		<Route path="/logIn-page" component={LogInPage} />
+
 	</Route>
 );
 

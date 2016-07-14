@@ -1,0 +1,36 @@
+body {
+  background: #EEE;
+  font-family: sans-serif;
+  margin: 20px;
+  -webkit-user-select: none;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+#board {
+  background: #666;
+  border-radius: 8px;
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+}
+
+.row {
+  overflow: auto;
+}
+
+.tile {
+  background: #CCC;
+  border-radius: 4px;
+  color: #FFF;
+  float: left;
+  font-size: 50px;
+  height: 100px;
+  line-height: 100px;
+  margin: 5px;
+  text-align: center;
+  width: 100px;
+}
+

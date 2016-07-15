@@ -11,6 +11,7 @@ var ManageTodoPage = require('./components/todos/ManageTodoPage');
 var CalendarPage = require('./components/calendar/Calendar');
 var SignUpPage = require('./components/signUp/SignUp');
 var LogInPage = require('./components/logIn/LogIn');
+var ProfilePage = require('./components/profile/Profile');
 
 var routes = (
 	<Route path="/" component={App}>
@@ -22,6 +23,7 @@ var routes = (
 		<Route path="/calendar-page" component={CalendarPage} />
 		<Route path="/signUp-page" component={SignUpPage} />
 		<Route path="/logIn-page" component={LogInPage} />
+		<Route path="/profile-page" component={ProfilePage} />
 
 	</Route>
 );

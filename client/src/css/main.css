@@ -21,6 +21,11 @@
 	font-size: 40px;
 }
 
+.more-toggle {
+	color: #fff;
+	font-size: 7px;
+}
+
 #board {
   background: #666;
   border-radius: 8px;

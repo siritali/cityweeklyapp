@@ -14,13 +14,32 @@ var ProfilePage = React.createClass({
 					  	<div className="row">
 				
 						    <div className="col-md-4 col-sm-6 col-xs-12">
-						      <div className="text-center">
-						        <img src="../images/poster1.jpg" className="avatar img-square img-thumbnail" alt="avatar"/>
-						      </div>
+						        <div className="text-center">
+						        	<img src="../images/poster2.jpg" className="avatar img-square img-thumbnail" alt="avatar"/>
+						        </div>
+						        <div>
+						        	<h1>Location</h1>
+						        </div>
 						    </div>
 						  
 						    <div className="col-md-8 col-sm-6 col-xs-12 personal-info">
-						      	<h3>EVENT DESCRIPTION</h3>
+						      	<h3 className="page-header">EVENT DESCRIPTION</h3>
+						      	<div>
+						      		<p>Rehab Beach Club is the infamous Las Vegas pool party set in a tropical oasis at Hard Rock Hotel & Casino. Party in true VIP fashion at Rehab Beach Club's multiple options of cabanas and daybeds. Dance to your favorite amped up top 40 hits, electronic dance music and performances from some of the hottest DJ's and stars in the music industry.</p>
+						      	</div>
+							</div>
+
+							<div className="col-md-8 col-sm-6 col-xs-12 personal-info">
+						      	<h3 className="page-header">FEATURED ARTIST</h3>
+						      	<div className="col-md-4 col-sm-6 col-xs-12">
+							        <div className="text-center">
+							        	<img src="../images/poster3.jpg" className="avatar img-square img-thumbnail" alt="avatar"/>
+							        </div>
+							    </div>
+							    <div>
+						        	<p>Flux Pavilion's polymath-like ability to involve himself in all aspects of music cannot be understated. Known as Joshua Steele to friends and family, Flux is a singer-songwriter, record producer and label owner who plays the drums, guitar, saxophone and piano. His achievements range from releasing his first vinyl at 19 years old to selling out the legendary Red Rocks Amphitheatre in Colorado twice, notching up a UK top 10 hit with Sway and having Kanye West & Jay Z sample his dance floor anthem 'I Can't Stop' in addition to featuring in DJ Magazine's Top 100 DJ's 2015. Not bad for a guy who started out replaying jingles he'd heard on TV on his Casio keyboard.</p>
+						        	<p>Influenced by the likes of David Bowie, The Beatles and Frank Zappa in the early years, it was when he heard The Prodigy and The Chemical Brothers that Flux Pavilion knew he had found a musical direction he truly wanted to explore for himself. A deluge of musical projects followed, writing instrumental hip hop and dirty drum & bass, joining local bands and producing for other acts all while studying at university. But the major turning point for this unquestionably talented musician was a visit to London superclub Fabric:</p>
+						        </div>
 							</div>
 					  	</div>
 					</div>
@@ -28,9 +47,9 @@ var ProfilePage = React.createClass({
 
 
 
-				
+				<div className="row page-header">
 				<h4>codes for edit profile page</h4>
-
+				</div>
 				<div className="container">
 				  	<h1 className="page-header">Edit Profile</h1>
 				  	<div className="row">

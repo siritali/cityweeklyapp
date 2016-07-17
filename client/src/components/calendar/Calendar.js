@@ -26,7 +26,11 @@ var CalendarPage = React.createClass({
 		return (
 			<div>
 				{calarr.map(function(i){
-					return <CalendarTile date={i[0]} dow={i[1]} key={i} />
+					return React.createElement(CalendarTile, {
+						key: i,
+						date:i[0],
+						dow:i[1]
+					});
 				})}
 			</div>
 		);

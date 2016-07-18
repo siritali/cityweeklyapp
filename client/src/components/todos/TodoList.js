@@ -27,7 +27,6 @@ var TodoList = React.createClass({
 			var todoTitle = todo.title;
 			var todoDescription = todo.description;
 			var todoCity = todo.city;
-			var todoDate = todo.date;
 
 			if (todo.completed) {
 				tdClass = 'todo-done';
@@ -35,7 +34,6 @@ var TodoList = React.createClass({
 				todoTitle = (<s>{todo.title}</s>);
 				todoDescription = (<s>{todo.description}</s>);
 				todoCity = (<s>{todo.city}</s>);
-				todoDate = (<s>{todo.date}</s>);
 			}
 
 			return (
@@ -43,7 +41,6 @@ var TodoList = React.createClass({
 					<td className={tdClass}><Link to={'/manage-todo/' + todo._id}>{todoTitle}</Link></td>
 					<td className={tdClass}>{todoDescription}</td>
 					<td className={tdClass}>{todoCity}</td>
-					<td className={tdClass}>{todoDate}</td>
 					<td><a href="#" onClick={this.deleteTodo.bind(this, todo)}>Delete</a></td>
 					<td><a href="#" onClick={this.updateTodo.bind(this, todo)}>{isDone}</a></td>
 				</tr>
@@ -62,7 +59,6 @@ var TodoList = React.createClass({
 						<th>Name</th>
 						<th>Description</th>
 						<th>City</th>
-						<th>Date</th>
 						<th></th>
 						<th></th>
 					</tr>

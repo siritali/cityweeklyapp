@@ -30,14 +30,6 @@ var TodoForm = React.createClass({
 					saveTodoState={this.props.saveTodoState}
 					error={this.props.errors.city}
 				/>
-				<input
-					name="date"
-					placeholder="mm/dd/yyyy"
-					type="date"
-					value={this.props.todo.date}
-					className="btn btn-success btn-lg"
-
-				/>
 				<input type="submit" value="Save Event" className="btn btn-success btn-lg" />
 				<input type="submit" value="Edit Event" className="btn btn-success btn-lg" />
 				<input type="submit" value="Delete Event" className="btn btn-success btn-lg" />

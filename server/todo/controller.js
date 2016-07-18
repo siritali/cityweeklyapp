@@ -19,7 +19,7 @@ function createTodo(req, res)
 		title: req.body.title,
 		description: req.body.description,
 		city: req.body.city,
-		date: req.body.date,
+		// date: req.body.date,
 		completed: req.body.completed
 	},
 	function (err, item) {
@@ -67,7 +67,7 @@ function updateTodo(req, res)
 		item.title = req.body.title
 		item.description = req.body.description
 		item.city = req.body.city
-		item.date = req.body.date
+		// item.date = req.body.date
 		item.completed = req.body.completed
 
 		item.save(function (err)

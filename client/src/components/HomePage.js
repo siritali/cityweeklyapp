@@ -8,7 +8,6 @@ var Home = React.createClass({
 			<div className="jumbotron">
 				<h1>EXPLORE THE WORLD</h1>
 				<h4>Where the party at?</h4>
-				<Tile />
 			</div>
 		);
 	}

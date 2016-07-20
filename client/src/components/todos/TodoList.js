@@ -53,7 +53,7 @@ var TodoList = React.createClass({
 			output = (<tr><td>There are no Event</td></tr>);
 		}
 		return (
-			<table className="table">
+			<table className="table list-group">
 				<thead>
 					<tr>
 						<th>Name</th>

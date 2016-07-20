@@ -1,3 +1,7 @@
+body {
+	padding-top: 45px;
+}
+
 .todo-done {
 	opacity: 0.5;
 }
@@ -33,19 +37,19 @@
   padding: 5px;
   position: relative;
 }
-table {
+/*table {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-}
+}*/
 /*table th {
 	width: 200px;
 	height: 200px;
 	text-align: center;
 }*/
-table th{
+/*table th{
     border: 1px solid black;
-}	
+}	*/
 
 .row {
   overflow: auto;

@@ -106,6 +106,34 @@ var ProfilePage = React.createClass({
 						</div>
 				  	</div>
 				</div>
+
+
+
+				<div className="col-md-12">
+				    <div className="media">
+				        <a className="media-left waves-light">
+				            <img className="img-circle" src="http://mdbootstrap.com/wp-content/uploads/2015/10/team-avatar-1.jpg" alt="placeholder image"/>
+				        </a>
+				        <div className="media-body">
+				            <h4 className="media-heading">John Doe</h4>
+				            <ul className="rating inline-ul">
+				                <li><i className="fa fa-star amber-text"></i></li>
+				                <li><i className="fa fa-star amber-text"></i></li>
+				                <li><i className="fa fa-star amber-text"></i></li>
+				                <li><i className="fa fa-star"></i></li>
+				                <li><i className="fa fa-star"></i></li>
+				            </ul>
+				            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+				        </div>
+				    </div>
+				</div>
+
+
+
+				
+
+
+
 			</div>
 		);
 	}

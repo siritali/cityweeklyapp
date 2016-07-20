@@ -7,7 +7,7 @@ var Link = require('react-router').Link;
 var Header = React.createClass({
 	render: function () {
 		return (
-			<div className="navbar navbar-inverse" role="navigation">
+			<div className="navbar scrolling-navbar navbar-inverse navbar-fixed-top" role="navigation">
 			    <div className="container-fluid">
 			    	<div className="navbar-header">
 			      		<button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -15,7 +15,6 @@ var Header = React.createClass({
 				        	<span className="icon-bar"></span>
 				        	<span className="icon-bar"></span>
 				        	<span className="icon-bar"></span>
-				        	<span className="more-toggle">MORE</span>
 			      		</button>
 			      		<Link to="/" className="navbar-brand">City Weekly App</Link>
 			    	</div>

@@ -20,7 +20,7 @@ var config = {
 			'node_modules/bootstrap/dist/css/bootstrap.min.css',
 			'node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
 			'node_modules/toastr/build/toastr.css',
-			'client/src/css/main.css'
+			'client/src/css/*.css'
 		],
 		dist: './dist'
 	}
@@ -57,6 +57,11 @@ gulp.task('css', function () {
 		.pipe(connect.reload());
 });
 
+// Sass Task
+
+// Fonts Task
+
+
 gulp.task('images', function () {
 	gulp.src(config.paths.images)
 		.pipe(gulp.dest(config.paths.dist + '/images'))
@@ -77,10 +82,13 @@ gulp.task('watch', function () {
 	gulp.watch(config.paths.html, ['html']);
 	gulp.watch(config.paths.js, ['js']);
 	gulp.watch(config.paths.css, ['css']);
+	gulp.watch(config.paths.css, ['images']);
 });
 
 
-gulp.task('default', ['html', 'css', 'images', 'js', 'watch']);
+gulp.task('default', ['html', 'css', 'images', 'js', 'watch'], function(){
+	return gulp.watch('src/**/*.*', ['default']);
+});
 
 
 

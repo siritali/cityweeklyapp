@@ -8,7 +8,8 @@ var path = require('path')
 
 // Configure Mongoose
 
-mongoose.connect('mongodb://mongodb.cs.dixie.edu/cwa')
+// mongoose.connect('mongodb://mongodb.cs.dixie.edu/cwa')
+mongoose.connect('mongodb://localhost/cwa')
 
 mongoose.connection.on('connected', function () {
 	console.log('Data Base Connected...'.rainbow)

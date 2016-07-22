@@ -21,7 +21,8 @@ header {
   overflow: auto;
 }
 
-.tile {
+.tile,
+#calendarTile {
   background: #CCC;
   border-radius: 4px;
   color: #FFF;

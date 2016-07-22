@@ -30,9 +30,11 @@ var TodoForm = React.createClass({
 					saveTodoState={this.props.saveTodoState}
 					error={this.props.errors.city}
 				/>
+				<h6>Upload photo...</h6>
+				<input type="file" value="Upload Photo" className="text-center center-block well well-sm btn btn-primary btn-sm" />
 				<input type="submit" value="Save Event" className="btn btn-success btn-lg" />
-				<input type="submit" value="Edit Event" className="btn btn-success btn-lg" />
-				<input type="submit" value="Delete Event" className="btn btn-success btn-lg" />
+				<input type="submit" value="Edit Event" className="btn btn-warning btn-lg" />
+				<input type="submit" value="Delete Event" className="btn btn-danger btn-lg" />
 			</form>
 		);
 	}

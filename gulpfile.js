@@ -57,6 +57,11 @@ gulp.task('css', function () {
 		.pipe(connect.reload());
 });
 
+// Sass Task
+
+// Fonts Task
+
+
 gulp.task('images', function () {
 	gulp.src(config.paths.images)
 		.pipe(gulp.dest(config.paths.dist + '/images'))
@@ -81,7 +86,9 @@ gulp.task('watch', function () {
 });
 
 
-gulp.task('default', ['html', 'css', 'images', 'js', 'watch']);
+gulp.task('default', ['html', 'css', 'images', 'js', 'watch'], function(){
+	return gulp.watch('src/**/*.*', ['default']);
+});
 
 
 

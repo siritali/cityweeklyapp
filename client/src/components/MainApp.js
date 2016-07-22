@@ -2,7 +2,8 @@
 
 var React = require('react');
 var AppAction = require('../actions/appAction');
-var TaskStore = require('../stores/taskStore');
+var EventStore = require('../stores/EventStore');
+var EventFormNew = require('./events/EventFormNew');
 
 function getMainAppState(){
 	return {
@@ -24,13 +25,10 @@ var MainApp = React.createClass({
 	render: function () {
 		return (
 			<div>
-				<a onClick={this.handleClick}>New Task</a>
-				<TaskForm />
+				<a onClick={this.handleClick}>New Event</a>
+				<EventFormNew />
 			</div>
 		),
-		handleClick: function(){
-			AppAction.newTask();
-		}
 	}
 });
 
